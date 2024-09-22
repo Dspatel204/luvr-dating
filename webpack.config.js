@@ -1,11 +1,12 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-export default {
+
+module.exports = {
   entry: {
-    "mobile-app": "./src/main.jsx",
+    "mobile-app": "./src/index.js",
   },
   output: {
-    path: path.resolve("Build"),
+    path: path.resolve(__dirname, "Build"),
     filename: "[name]-bundle.js",
   },
   module: {
@@ -17,27 +18,13 @@ export default {
           loader: "babel-loader",
           options: {
             presets: ["@babel/preset-env", "@babel/preset-react"],
-            sourceMaps: false,
+            "sourceMaps": false
           },
         },
       },
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
-      },
-      {
-        test: /\.(ttf|woff|woff2|eot|otf)$/i, // Handle font files
-        type: "asset/resource",
-        generator: {
-          filename: "fonts/[name].[ext]", // Output pattern for fonts
-        },
-      },
-      {
-        test: /\.(png|jpe?g|gif|svg)$/i,
-        type: "asset/resource", // Use Webpack 5's asset module to handle images
-        generator: {
-          filename: "images/[name].[ext]", // Output pattern for images
-        },
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
@@ -47,6 +34,7 @@ export default {
             options: {
               outputPath: "images",
               name: "[name].[ext]",
+              bypassOnDebug: true,
             },
           },
         ],
@@ -61,7 +49,7 @@ export default {
   ],
   devServer: {
     static: {
-      directory: path.join("Build"),
+      directory: path.join(__dirname, "Build"),
     },
     compress: true,
     port: 3000,
