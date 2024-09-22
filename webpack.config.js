@@ -1,6 +1,5 @@
-import path from "path";
-import HtmlWebpackPlugin from "html-webpack-plugin";
-
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 export default {
   entry: {
     "mobile-app": "./src/main.jsx",
