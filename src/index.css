@@ -1,0 +1,2001 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "IrisUPC";
+  src: url("./Assets//fonts/upcil.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "inter";
+  src: url("./Assets//fonts/Inter/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("./Assets//fonts/Poppins//Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "poppinsLight";
+  src: url("./Assets//fonts/Poppins//Poppins-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "inria";
+  src: url("./Assets//fonts/Inria_Serif/InriaSerif-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "isabel";
+  src: url("./Assets//fonts/font/IsabelCondensedUnicase-Bold.ttf") format("opentype");
+}
+
+body {
+  background: url("./Assets/images/bg11.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+a {
+  color: #fff;
+}
+
+.pr {
+  position: relative;
+}
+
+.logo_tagline {
+  text-align: center;
+}
+
+.logo_tagline img {
+  margin: 2em 0 1em 0;
+  height: 111px;
+}
+
+.tagline {
+  font-size: 52px;
+  line-height: 40px;
+  font-family: IrisUPC;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: black;
+}
+
+.coupleChatingImg img {
+  width: 549px;
+}
+
+.appDownloadSection {
+  display: flex;
+  background-color: #fff;
+  border-radius: 190px 0px 190px 190px;
+  margin: 2em 110px;
+  padding: 25px 30px;
+  box-shadow: 0px 4px 10px 0px #00000040;
+  gap: 5vw;
+  margin-bottom: 0px;
+}
+
+.appName {
+  font-family: isabel;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 72px;
+}
+
+.pinkClr {
+  color: #ff4165;
+}
+
+.rightDownloadSection>p:first-of-type {
+  font-family: IrisUPC;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 30.9px;
+  margin: 10px 0 40px 0;
+}
+
+.googleAppDownloadBtns {
+  display: flex;
+  gap: 10px;
+}
+
+.downloadBtn {
+  display: flex;
+  background-color: black;
+  color: #fff;
+  padding: 15px;
+  gap: 4.8px;
+  border-radius: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.playStoreText>p:first-of-type {
+  font-family: inter;
+  font-size: 14px;
+}
+
+.playStoreText p:nth-of-type(2) {
+  font-family: IrisUPC;
+  font-size: 37px;
+  line-height: 23px;
+}
+
+.datingAppFeaturesSectionContainer {
+  margin-top: 110px;
+  display: flex;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.leftSection .boyImg {
+  width: 455px;
+}
+
+.leftSection .girlImg {
+  width: 424px;
+}
+
+.positionAbsolute {
+  position: absolute;
+  bottom: -205px;
+  right: -103px;
+}
+
+.rightSection {
+  padding: 30px 0 0 85px;
+}
+
+.rightSection h1 {
+  color: black;
+  font-family: isabel;
+  font-size: 60px;
+  margin-bottom: 60px;
+}
+
+.textFeature {
+  display: flex;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.hexagon {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background: #ff4165;
+  height: 57px;
+  width: 67px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  font-family: poppins;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  height: 57px;
+  width: 703px;
+  position: relative;
+  background: white;
+  clip-path: polygon(75% 0%, 85% 50%, 75% 100%, 0% 100%, 5% 50%, 0% 0%);
+  z-index: 10;
+}
+
+.arrow :before {
+  z-index: -1;
+  content: "";
+  background: #ffa9b9;
+  height: 54px;
+  width: 697px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  clip-path: polygon(75% 0%, 85% 50%, 75% 100%, 0% 100%, 5% 50%, 0% 0%);
+  text-align: left;
+}
+
+/* .arrow span {
+    z-index: 5;
+    position: relative;
+   
+} */
+.absolute {
+  position: absolute;
+  left: 660px;
+  z-index: 111;
+  color: #2e2929;
+  font-family: poppins;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.problem_pricing_container {
+  margin-top: 10%;
+  display: flex;
+}
+
+.problem_pricing_left {
+  margin-top: 10%;
+}
+
+.problemTitle {
+  background: linear-gradient(90deg, #f9a6ba 0%, #ff4165 99.99%, #737373 100%);
+  border-radius: 0px 70px 70px 0px;
+  padding: 10px 0;
+}
+
+.problem_pricing_left p {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  color: #2e2929;
+  margin-top: 20px;
+  padding-left: 12%;
+}
+
+.problemTitle h2 {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
+  text-align: left;
+  padding-left: 12%;
+}
+
+.problem_pricing_right_Image img {
+  width: 650px;
+}
+
+.mt {
+  margin-top: 8%;
+}
+
+.investmentContainer {
+  display: flex;
+  margin-top: 11.5%;
+  padding: 0 7%;
+  gap: 5%;
+}
+
+.investmentRight h1 {
+  font-family: isabel;
+  font-size: 70px;
+  line-height: 96px;
+  margin-bottom: 5%;
+}
+
+.investmentRight p {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  margin-bottom: 3%;
+  color: #2e2929;
+}
+
+.investmentLeft {
+  margin-top: 10%;
+}
+
+.investmentLeft img {
+  width: 450px;
+}
+
+.uniqueFeaturesContainer {
+  display: flex;
+  margin-top: 10%;
+  padding-left: 10%;
+  margin-bottom: 4%;
+}
+
+.uniqueFeaturesLeft h1 {
+  font-family: Isabel;
+  font-size: 70px;
+  line-height: 84px;
+  margin-bottom: 3vw;
+}
+
+.uniqueFeaturesDiv {
+  border: 2px dashed #d31136;
+  border-spacing: 10px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  padding: 15px 50px;
+  position: relative;
+}
+
+.uniqueFeaturesDiv h2 {
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #fff;
+}
+
+.uniqueFeaturesDiv p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #2e2929;
+}
+
+.dashedCircle {
+  height: 58px;
+  width: 58px;
+  border-radius: 50%;
+  border: 2px dashed #d31136;
+  position: absolute;
+  top: 30%;
+  left: -5%;
+  background-color: #ffa9b9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filledCircle {
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(180deg, #ff4165 0%, #9a0d28 100%);
+  border-radius: 50%;
+}
+
+.uniqueFeaturesRightImg img {
+  width: 639px;
+}
+
+.pinkHr {
+  border-color: #ed8095;
+  /* Change 'red' to whatever color you prefer */
+  background-color: #ed8095;
+  height: 2px;
+}
+
+.teamContainer {
+  display: flex;
+  gap: 30px;
+}
+
+.teamLeftImg img {
+  width: 579px;
+}
+
+.teamrightDetails h1 {
+  font-family: Isabel;
+  font-size: 80px;
+  line-height: 96px;
+  margin-bottom: 10vh;
+}
+
+.designation h2:first-of-type {
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.designation h2 {
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.designation p {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #2e2929;
+  margin-top: 15px;
+}
+
+.directorFounderFlex {
+  display: flex;
+  gap: 30px;
+}
+
+.directorFounderFlex {
+  padding-right: 5%;
+  margin-bottom: 5%;
+}
+
+.consultant {
+  padding-right: 20%;
+}
+
+.consultant hr {
+  width: 70%;
+}
+
+.teamHr {
+  margin-top: 10px;
+  border-color: black;
+  background-color: black;
+  height: 3px;
+}
+
+.businessModelContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
+  gap: 4%;
+}
+
+.businessDetails {
+  margin-left: 4%;
+}
+
+.businessDetails h1 {
+  font-family: Isabel;
+  font-size: 80px;
+  line-height: 96px;
+  margin-bottom: 30px;
+}
+
+.approach {
+  background: #ff416580;
+  box-shadow: -4px 2px 16px 0px #00000040;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  padding: 20px 35px;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.approach .whiteCircle {
+  width: 94.44px;
+  height: 94.44px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: -3.78px 4.72px 9.44px 0px #00000040;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whiteCircle .innerCircle {
+  width: 66.11px;
+  height: 66.11px;
+  background: #ffffff;
+  box-shadow: -3.78px 1.89px 9.44px 0px #00000075;
+  border-radius: 50%;
+  font-family: Isabel;
+  font-size: 48.01px;
+  line-height: 57.61px;
+  color: #ff4165;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.approachDetails h3 {
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 42px;
+  color: white;
+}
+
+.approachDetails p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #2e2929;
+}
+
+.businessImg,
+.flexEnd {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.businessImgText p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #2e2929;
+  margin: 15px 30px 0 0;
+}
+
+.businessLine,
+.uniqueFeatureLine {
+  width: 100%;
+  border-bottom: 2px solid #ed8095;
+  position: absolute;
+  left: -50px;
+  top: 85px;
+}
+
+.datingAppLine {
+  width: 50vw;
+  position: absolute;
+  bottom: -5px;
+  border: 1px solid #ed8095;
+}
+
+.investmentLine,
+.teamLine {
+  width: 100%;
+  position: absolute;
+  bottom: 3px;
+  border: 1px solid #ed8095;
+}
+
+.testingMarketingContainer {
+  display: flex;
+  gap: 3%;
+  margin-bottom: 10%;
+}
+
+.tesingImg img {
+  width: 485px;
+}
+
+.testingDetails h1 {
+  font-family: Isabel;
+  font-size: 80px;
+  margin-top: 5%;
+}
+
+.testingDetails p {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #2e2929;
+  margin-bottom: 30px;
+  padding-right: 10%;
+}
+
+.testingLineWrapper {
+  position: relative;
+  margin-bottom: 5%;
+}
+
+.testingLine {
+  width: 100%;
+  /* Set width based on content */
+  position: absolute;
+  /* Position relative to .testingLineWrapper */
+  border: 1px solid #ed8095;
+  bottom: -10px;
+}
+
+.trendContainer {
+  display: flex;
+  gap: 8em;
+  padding: 5em;
+}
+
+/* .trendDetails {
+  margin-left: 5%;
+} */
+
+.trendImg img {
+  margin-top: 1.5em;
+  width: 494px;
+}
+
+.trendDetails h1 {
+  font-family: Isabel;
+  font-size: 80px;
+  line-height: 96px;
+  font-weight: 400;
+}
+
+.trendDetails p {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #2e2929;
+  margin-bottom: 30px;
+}
+
+.trendLine {
+  width: 110%;
+  border-bottom: 2px solid #ed8095;
+  position: absolute;
+  left: -11%;
+}
+
+.pieChartContainer {
+  margin-top: 12%;
+  display: flex;
+  gap: 5%;
+}
+
+.pieChartLeft {
+  margin-left: 7%;
+}
+
+.pieChartText {
+  /* width: 537px; */
+  border-radius: 25px;
+  background: #fe7b93;
+  padding: 25px 40px;
+  margin-right: 15%;
+}
+
+.pieChartText p {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #2e2929;
+}
+
+.pieChartLeft img {
+  width: 530px;
+}
+
+.flexEnd img {
+  width: 485px;
+}
+
+.newsletterFooterContainer {
+  background: url("./Assets//images/footerBgImage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.newsletterContainer {
+  text-align: center;
+  margin-bottom: 15vh;
+  padding: 50px 80px 30px 80px;
+}
+
+.newsletterContainer h1 {
+  font-family: Isabel;
+  font-size: 100px;
+  line-height: 120px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.newsletterContainer p {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color: #2e2929;
+  margin-bottom: 30px;
+}
+
+.input input {
+  padding-left: 30px;
+  width: 40%;
+  /* height: 60px; */
+  padding: 19px;
+  outline: none;
+  border-radius: 15px 0px 0px 15px;
+  border: none;
+  font-size: 20px;
+}
+
+.input input::placeholder {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.input button {
+  width: 172px;
+  /* height: 60px; */
+  padding: 15px;
+  border-radius: 0px 10px 10px 0px;
+  border: none;
+  background: #ff4165;
+  outline: none;
+  color: white;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  /* line-height: 35px; */
+  letter-spacing: 0.03em;
+}
+
+.input button:hover {
+  background-color: #e61f44c4;
+}
+
+.footerWrapper {
+  /* opacity: 0.1; */
+  background: #00000080;
+}
+
+.footerContainer {
+  display: flex;
+  padding: 6em;
+  color: white;
+  font-family: poppins;
+  justify-content: space-between;
+}
+
+.footerLogoName {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerLogoName img {
+  margin-bottom: 1em;
+}
+
+.footerLogoName h1 {
+  font-family: Isabel;
+  font-size: 50px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.quickLink h2,
+.about h2,
+.contact h2 {
+  border-bottom: 1px solid white;
+  width: max-content;
+  padding-bottom: 3px;
+  margin-bottom: 0.4em;
+  font-size: 23px;
+  font-weight: 600;
+  /* line-height: 37.5px; */
+}
+
+.quickLink ul {
+  padding-left: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+.quickLink li,
+.contact p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  font-family: poppinsLight;
+}
+
+.contact p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.contact i {
+  font-size: 20px;
+}
+
+.socialIconContainer {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.socialIconContainer .socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 53.47px;
+  height: 53.47px;
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.socialIcon a {
+  color: #fff;
+}
+
+
+.socialIcon:hover .socialLogo {
+  color: #ff4165;
+}
+
+.socialIconContainer .socialIcon:hover {
+  border: 2px solid #ff4165;
+  color: #ff4165;
+}
+
+.socialIcon i {
+  font-size: 20px;
+}
+
+.downloadText {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+
+.footerLineContainer {
+  width: 100%;
+  padding: 0 6em;
+  text-align: center;
+}
+
+.footerHr {
+  border: none;
+  border-top: 1px solid white;
+}
+
+.footerLineContainer p {
+  font-family: PoppinsLight;
+  font-size: 13px;
+  line-height: 19.5px;
+  color: white;
+  padding: 2em 0;
+}
+
+.businessImg img {
+  width: 505px;
+}
+
+.footerLogoName img {
+  height: 101px;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 2500px) {
+  .dashedCircle {
+    left: -3%;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .dashedCircle {
+    left: -5%;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .coupleChatingImg img {
+    width: 480px;
+  }
+
+  .appDownloadSection {
+    margin: 2em 80px;
+    gap: 4vw;
+  }
+
+  .appName {
+    font-size: 45px;
+    line-height: 52px;
+  }
+
+  .downloadBtn {
+    padding: 12px;
+  }
+
+  .playStoreText>p:first-of-type {
+    font-size: 12px;
+  }
+
+  .playStoreText p:nth-of-type(2) {
+    font-size: 30px;
+    line-height: 18px;
+  }
+
+  .arrow {
+    width: 503px;
+  }
+
+  .arrow :before {
+    width: 498px;
+  }
+
+  .absolute {
+    left: 640px;
+    font-size: 18px;
+  }
+
+  .problem_pricing_right_Image img {
+    width: 550px;
+    margin-top: 50px;
+  }
+
+  .problem_pricing_left p {
+    font-size: 19px;
+    margin-top: 17px;
+    padding-left: 9%;
+  }
+
+  .problemTitle h2 {
+    font-size: 27px;
+    line-height: 37px;
+    padding-left: 9%;
+  }
+
+  .investmentContainer {
+    margin-top: 8%;
+    padding: 0 3%;
+    gap: 5%;
+  }
+
+  .investmentRight h1 {
+    font-size: 63px;
+    line-height: 96px;
+    margin-bottom: 3%;
+  }
+
+  .uniqueFeaturesContainer {
+    padding-left: 5%;
+  }
+
+  .uniqueFeaturesDiv {
+    padding-right: 30px;
+    padding-left: 35px;
+  }
+
+  .dashedCircle {
+    height: 50px;
+    width: 50px;
+    top: 30%;
+    left: -5%;
+  }
+
+  .teamLeftImg img {
+    width: 499px;
+  }
+
+  .designation h2 {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .directorFounderFlex {
+    padding-right: 3%;
+    margin-bottom: 5%;
+  }
+
+  .businessDetails {
+    flex: 60%;
+  }
+
+  .businessImg {
+    flex: 40%;
+  }
+
+  .businessImg img {
+    width: 400px;
+  }
+
+  .businessImgText p {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 15px 15px 0 0;
+  }
+
+  .businessDetails {
+    margin-left: 2%;
+  }
+
+  .approachDetails p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .approachDetails h3 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .approach {
+    padding: 20px 25px;
+    gap: 20px;
+  }
+
+  .pieChartLeft img {
+    width: 480px;
+  }
+
+  .pieChartLeft {
+    margin-left: 4%;
+  }
+
+  .pieChartContainer {
+    margin-top: 8%;
+    gap: 3%;
+  }
+
+  .newsletterContainer h1 {
+    font-size: 80px;
+    line-height: 100px;
+  }
+
+  .trendImg img {
+    width: 400px;
+  }
+
+  .trendContainer {
+    display: flex;
+    gap: 5em;
+    padding: 4em;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .coupleChatingImg img {
+    width: 400px;
+  }
+
+  .rightDownloadSection>p:first-of-type {
+    font-size: 40px;
+    line-height: 30.9px;
+    margin: 10px 0 20px 0;
+  }
+
+  .appDownloadSection {
+    margin: 10px 60px 0 60px;
+    gap: 3vw;
+    padding: 25px 30px;
+  }
+
+  .appName {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .downloadBtn {
+    padding: 10px;
+  }
+
+  .playStoreText>p:first-of-type {
+    font-size: 10px;
+  }
+
+  .playStoreText p:nth-of-type(2) {
+    font-size: 20px;
+    line-height: 15px;
+  }
+
+  .downloadBtn img {
+    width: 20px;
+  }
+
+  .rightSection h1 {
+    font-size: 51px;
+    margin-bottom: 60px;
+  }
+
+  .leftSection .boyImg {
+    width: 355px;
+  }
+
+  .leftSection .girlImg {
+    width: 324px;
+  }
+
+  .positionAbsolute {
+    position: absolute;
+    bottom: -54px;
+    right: -80px;
+  }
+
+  .arrow {
+    width: 403px;
+  }
+
+  .arrow :before {
+    width: 398px;
+  }
+
+  .absolute {
+    left: 523px;
+    font-size: 15px;
+  }
+
+  .textFeature {
+    margin-bottom: 35px;
+  }
+
+  .rightSection {
+    padding: 30px 0 0 75px;
+  }
+
+  .problem_pricing_right_Image img {
+    width: 450px;
+    margin-top: 80px;
+  }
+
+  .problem_pricing_left p {
+    font-size: 18px;
+    margin-top: 13px;
+    padding-left: 5%;
+  }
+
+  .problemTitle h2 {
+    font-size: 22px;
+    line-height: 22px;
+    padding-left: 5%;
+  }
+
+  .mt {
+    margin-top: 5%;
+  }
+
+  .investmentContainer {
+    margin-top: 6%;
+    padding: 0 2%;
+    gap: 2%;
+  }
+
+  .investmentLeft img {
+    width: 380px;
+  }
+
+  .investmentRight p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 3%;
+  }
+
+  .investmentRight h1 {
+    font-size: 51px;
+    line-height: 96px;
+    margin-bottom: 3%;
+  }
+
+  .uniqueFeaturesLeft h1 {
+    font-size: 51px;
+    margin-bottom: 2vw;
+  }
+
+  .uniqueFeaturesRightImg img {
+    width: 460px;
+  }
+
+  .uniqueFeaturesDiv h2 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .uniqueFeaturesDiv p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .uniqueFeaturesContainer {
+    padding-left: 4%;
+  }
+
+  .uniqueFeaturesDiv {
+    padding-right: 15px;
+  }
+
+  .teamLeftImg img {
+    width: 399px;
+  }
+
+  .teamrightDetails h1 {
+    font-size: 51px;
+    line-height: 80px;
+    margin-bottom: 8vh;
+  }
+
+  .designation h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .directorFounderFlex {
+    padding-right: 3%;
+    margin-bottom: 5%;
+    gap: 20px;
+  }
+
+  .designation p {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 15px;
+  }
+
+  .designation h2:first-of-type {
+    margin-bottom: 7px;
+  }
+
+  .teamContainer {
+    gap: 20px;
+  }
+
+  .businessImg img {
+    width: 350px;
+    margin-top: 80px;
+  }
+
+  .businessDetails h1 {
+    font-size: 51px;
+    line-height: 96px;
+    margin-bottom: 20px;
+  }
+
+  .approach .whiteCircle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .whiteCircle .innerCircle {
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .businessImgText p {
+    font-size: 18px;
+    line-height: 20px;
+    margin: 15px 15px 0 0;
+  }
+
+  .businessDetails {
+    margin-left: 2%;
+  }
+
+  .approachDetails p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .approachDetails h3 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .approach {
+    padding: 20px 25px;
+    gap: 20px;
+  }
+
+  .testingDetails h1 {
+    font-size: 51px;
+    line-height: 55px;
+    margin-top: 4%;
+  }
+
+  .tesingImg img {
+    width: 385px;
+  }
+
+  .testingDetails p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 25px;
+    padding-right: 5%;
+  }
+
+  .trendContainer {
+    gap: 3em;
+    padding: 3em;
+  }
+
+  .trendImg img {
+    width: 394px;
+  }
+
+  .trendDetails h1 {
+    font-size: 51px;
+    line-height: 70px;
+  }
+
+  .trendDetails p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 25px;
+  }
+
+  .pieChartLeft img {
+    width: 430px;
+  }
+
+  .flexEnd img {
+    width: 385px;
+  }
+
+  .pieChartText {
+    padding: 20px 30px;
+    margin-right: 3em;
+  }
+
+  .pieChartText p {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+  }
+
+  .newsletterContainer h1 {
+    font-size: 70px;
+    line-height: 90px;
+    margin-bottom: 10px;
+  }
+
+  .newsletterContainer p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 25px;
+  }
+
+  .input input {
+    width: 40%;
+    padding: 18px;
+    font-size: 18px;
+  }
+
+  .input input::placeholder {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .input button {
+    padding: 15.5px;
+    font-size: 18px;
+  }
+
+  .footerContainer {
+    padding: 6em 3em 3em 3em;
+  }
+
+}
+
+@media screen and (max-width: 1020px) {
+  .footerContainer {
+    padding: 6em 1.5em 3em 1.5em;
+  }
+
+  .socialIconContainer .socialIcon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .socialIconContainer {
+    gap: 0.5em;
+    margin-bottom: 2em;
+  }
+
+  .quickLink li,
+  .contact p,
+  .about p {
+    font-size: 14px;
+    line-height: 27px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .logo_tagline img {
+    height: 100px;
+  }
+
+  .coupleChatingImg img {
+    width: 300px;
+  }
+
+  .tagline {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0.06em;
+  }
+
+  .rightDownloadSection>p:first-of-type {
+    font-size: 35px;
+    line-height: 20.9px;
+    margin: 0px 0 10px 0;
+  }
+
+  .appDownloadSection {
+    margin: 14px 40px 0 40px;
+    gap: 2vw;
+    padding: 20px 25px;
+  }
+
+  .appName {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .downloadBtn {
+    padding: 8px;
+  }
+
+  .playStoreText>p:first-of-type {
+    font-size: 10px;
+  }
+
+  .playStoreText p:nth-of-type(2) {
+    font-size: 20px;
+    line-height: 15px;
+  }
+
+  .downloadBtn img {
+    width: 20px;
+  }
+
+  .rightSection h1 {
+    font-size: 45px;
+    margin-bottom: 50px;
+  }
+
+  .leftSection .boyImg {
+    margin-top: 50px;
+    width: 255px;
+  }
+
+  .leftSection .girlImg {
+    width: 224px;
+  }
+
+  .positionAbsolute {
+    position: absolute;
+    bottom: -50px;
+    right: -60px;
+  }
+
+  .hexagon {
+    height: 40px;
+    width: 49px;
+    font-size: 25px;
+  }
+
+  .arrow {
+    width: 403px;
+    height: 45px;
+  }
+
+  .arrow :before {
+    width: 398px;
+    height: 43px;
+  }
+
+  .absolute {
+    left: 405px;
+    font-size: 15px;
+  }
+
+  .textFeature {
+    margin-bottom: 25px;
+  }
+
+  .rightSection {
+    padding: 30px 0 0 65px;
+  }
+
+  .problem_pricing_right_Image img {
+    width: 350px;
+    margin-top: 80px;
+  }
+
+  .problem_pricing_left p {
+    font-size: 14px;
+    margin-top: 8px;
+    padding-left: 3%;
+  }
+
+  .problemTitle h2 {
+    font-size: 18px;
+    line-height: 18px;
+    padding-left: 3%;
+  }
+
+  .mt {
+    margin-top: 3%;
+  }
+
+  .investmentContainer {
+    margin-top: 4%;
+    padding: 0 2%;
+    gap: 1%;
+  }
+
+  .investmentLeft img {
+    width: 280px;
+  }
+
+  .investmentRight p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 3%;
+  }
+
+  .investmentRight h1 {
+    font-size: 41px;
+    line-height: 70px;
+    margin-bottom: 2%;
+  }
+
+  .uniqueFeaturesLeft h1 {
+    font-size: 41px;
+    margin-bottom: 1vw;
+  }
+
+  .uniqueFeaturesRightImg img {
+    width: 380px;
+  }
+
+  .uniqueFeaturesDiv h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .uniqueFeaturesDiv p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .uniqueFeaturesContainer {
+    padding-left: 4%;
+  }
+
+  .uniqueFeaturesDiv {
+    padding: 10px 10px 10px 30px;
+  }
+
+  .dashedCircle {
+    height: 40px;
+    width: 40px;
+    top: 30%;
+    left: -5%;
+  }
+
+  .filledCircle {
+    width: 20px;
+    height: 20px;
+  }
+
+  .teamLeftImg img {
+    width: 299px;
+  }
+
+  .teamrightDetails h1 {
+    font-size: 41px;
+    line-height: 60px;
+    margin-bottom: 6vh;
+  }
+
+  .designation h2 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .directorFounderFlex {
+    padding-right: 3%;
+    margin-bottom: 5%;
+    gap: 20px;
+  }
+
+  .designation p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 10 px;
+  }
+
+  .designation h2:first-of-type {
+    margin-bottom: 5px;
+  }
+
+  .teamContainer {
+    gap: 20px;
+  }
+
+  .businessImg img {
+    width: 300px;
+    margin-top: 70px;
+  }
+
+  .businessDetails h1 {
+    font-size: 41px;
+    /* line-height: 60px; */
+    margin-bottom: 10px;
+  }
+
+  .approach .whiteCircle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .whiteCircle .innerCircle {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .businessImgText p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 15px 7px 0 0;
+  }
+
+  .approachDetails p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .approachDetails h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .approach {
+    padding: 15px 20px;
+    gap: 15px;
+  }
+
+  .businessModelContainer {
+    gap: 2%;
+  }
+
+  .testingDetails h1 {
+    font-size: 41px;
+    line-height: 50px;
+    margin-top: 4%;
+  }
+
+  .tesingImg img {
+    width: 350px;
+  }
+
+  .testingDetails p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    padding-right: 5%;
+  }
+
+  .trendImg img {
+    margin-top: 1.5em;
+    width: 320px;
+  }
+
+  .trendContainer {
+    gap: 3em;
+    padding: 2em;
+  }
+
+  .trendDetails h1 {
+    font-size: 41px;
+    line-height: 60px;
+  }
+
+  .trendDetails p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .pieChartLeft img {
+    width: 320px;
+    margin-top: 3em;
+  }
+
+  .flexEnd img {
+    width: 300px;
+  }
+
+  .pieChartText {
+    padding: 15px 25px;
+    margin-right: 2em;
+  }
+
+  .pieChartText p {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+  }
+
+  .newsletterContainer h1 {
+    font-size: 60px;
+    line-height: 80px;
+  }
+
+  .newsletterContainer p {
+    margin-bottom: 20px;
+  }
+
+  .footerContainer {
+    padding: 6em 0.5em 3em 0.5em;
+  }
+
+  .footerLogoName img {
+    height: 90px;
+  }
+
+  .footerLogoName h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  .quickLink ul {
+    margin-bottom: 0.3em;
+  }
+
+  .quickLink li,
+  .contact p,
+  .about p {
+    font-size: 12px;
+    line-height: 27px;
+  }
+
+  .socialIconContainer .socialIcon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .socialIcon i {
+    font-size: 18px;
+  }
+
+  .downloadBtn {
+    padding: 10px;
+    gap: 2px;
+  }
+
+  .fs {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  #root {
+    width: 100%;
+  }
+
+  .homeContainer {
+    width: 100%;
+  }
+
+  .footerWrapper {
+    width: 100%;
+  }
+
+  .datingAppFeaturesSectionContainer {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .leftSection {
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  .absolute {
+    left: 425px;
+  }
+
+  .pieChartContainer {
+    width: 100%;
+  }
+
+  .problem_pricing_container .problem_pricing_left {
+    padding-left: 25px;
+  }
+
+  .problem_pricing_container {
+    width: 100%;
+  }
+
+  .pieChartSection {
+    width: 100%;
+  }
+
+  .newsletterFooterContainer {
+    width: 110%;
+  }
+
+  .investmentContainer {
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 0px;
+  }
+
+  .investmentLeft {
+    padding-left: 10px;
+  }
+
+  .uniqueFeaturesContainer {
+    padding-left: 6%;
+  }
+
+  .businessDetails {
+    margin-left: 40px;
+    width: 100%;
+  }
+
+  .footerContainer {
+    padding: 30px;
+    gap: 20px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:600px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  #root {
+    width: 100%;
+  }
+
+  .logo_tagline img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .homeContainer {
+    width: 200%;
+  }
+
+  .homeContainer .appDownloadSection {
+    padding: 20px;
+    gap: 1vw;
+    margin-left: 50px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .leftSection {
+    width: 100%;
+    padding-left: 90px;
+  }
+
+  #landingSection {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .logo_tagline .tagline {
+    text-align: center;
+  }
+
+  .absolute {
+    width: 100%;
+    left: 500px;
+  }
+
+  #problem_pricing_section {
+    width: 100%;
+  }
+
+  .problem_pricing_container .problem_pricing_left {
+    padding-left: 80px;
+  }
+
+  #problem_pricing_section .problem_pricing_container {
+    width: 100%;
+  }
+
+  .problem_pricing_right_Image img {
+    margin-top: 40px;
+  }
+
+  .investmentLeft {
+    padding-left: 80px;
+  }
+
+  .investmentContainer {
+    width: 100%;
+    margin-top: 0;
+    gap: 20px;
+  }
+
+  .uniqueFeaturesContainer {
+    margin-top: 0px;
+    width: 100%;
+    padding-left: 100px;
+  }
+
+  .uniqueFeaturesRightImg {
+    margin-top: 80px;
+  }
+
+
+  .businessModelContainer {
+    padding-left: 20px;
+  }
+
+  .trendDetails {
+    padding-left: 10px;
+  }
+
+  .footerWrapper .footerContainer {
+    padding-left: 100px;
+    width: 100%;
+  }
+
+  .teamContainer {
+    width: 100%;
+    padding-left: 85px;
+  }
+
+  .businessDetails {
+    margin-left: 80px;
+  }
+
+  .testingMarketingContainer {
+    margin-bottom: 0px;
+    padding-left: 88px;
+  }
+
+  .trendContainer {
+    width: 100%;
+    padding-left: 100px;
+  }
+
+  .newsletterContainer {
+    padding-left: 150px;
+  }
+
+  .pieChartContainer {
+    width: 100%;
+    padding-left: 70px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .homeContainer {
+    width: 200%;
+  }
+
+  #pieChartSection {
+    width: 100%;
+  }
+
+  .newsletterFooterContainer {
+    width: 110%;
+  }
+}
+
+@media screen and (max-width:380px) {
+  .newsletterFooterContainer {
+    width: 117%;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .homeContainer {
+    width: 250%;
+  }
+
+  .newsletterFooterContainer {
+    width: 109%;
+  }
+
+  .newsletterContainer {
+    padding: 0 0 0 0;
+  }
+
+  .footerWrapper .footerContainer {
+    padding-left: 20px;
+  }
+}
